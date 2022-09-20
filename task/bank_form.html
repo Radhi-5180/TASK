@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>bank form</title>
+    <style>
+    	.account-info{
+    		display: flex;
+    		align-items:center;
+    		gap:80px;
+    	}
+    	.buttons{
+    		display: flex;
+    		align-items:center;
+    		gap:300px;
+    	}
+    </style>
+</head>
+<body>
+   <h1>Wellcome To Simple Bank where we make banking simple!</h1>
+   <form>
+   	<fieldset>
+   		<legend>Account info</legend>
+   		<div class="account-info">
+   			<div>
+   				Name:<input type="text">
+   			</div>
+   			<div>
+   				Account Type:<br>
+   				saving<input type="radio" name="A">
+   				checking<input type="radio" name="A">
+   			</div>
+   		</div>
+   	</fieldset>
+
+   	<fieldset>
+   		<legend>Transection</legend>
+   		<div class="account-info">
+   			<div>
+   				Amount:<input type="text">
+   			</div>
+   			<div>
+   				transfer from:<input type="text">
+   			</div>
+   			<div>
+   				Tranfer To:<input type="text">
+   			</div>
+   		</div>
+   		<br>
+   		<div class="buttons">
+   			<input type="button" value="Deposit">
+   			<input type="button" value="withdraw">
+   			<input type="button" value="transfer">
+   			<input type="button" value="view Transection">
+   		</div>
+   	</fieldset>
+   </form>
+    <fieldset>
+    	<legend>View Transaction</legend>
+    	Name:testuser<br>
+    	Account:saving<br>
+    	Initial Balance:$1000.00
+    	<table border="2" style="width: 70%;">
+    		<tr>
+    			<th>Dicription</th>
+    			<th>Amount</th>
+    			<th>Balance</th>
+    		</tr>
+    		<tr>
+    			<td>Transfer to checking</td>
+    			<td>$500.00</td>
+    			<td>$500.00</td>
+
+    		</tr>
+    		<tr>
+    			<td>withdraw</td>
+    			<td>$-23.33</td>
+    			<td>$476.67</td>
+    		</tr>
+    		<tr>
+    			<td>Diposit</td>
+    			<td>$102.20</td>
+    			<td>$578.87</td>
+    		</tr>
+    		<tr>
+    		ss	<td>Transfer from checking</td>
+    			<td>$234.00</td>
+    			<td>$812.87</td>
+    		</tr>
+    	</table>
+    </fieldset>
+</body>
+</html>

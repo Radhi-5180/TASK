@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SBI netbanking task</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		.box{
+			background-color: #E1EEf2;
+			padding: 10px;
+		}
+		.box h3{
+			color: #1B75BC;
+		}
+	</style>
+</head>
+<body>
+
+   <div class="box">
+   	<h3>User Drive Registration-New User</h3>
+   </div>
+   <form>
+   	<table style="width: 100%;" cellspacing="40px">
+
+   		<tr>
+   			<td colspan="3">
+   				<small style="color: red;"><i>Mandatory fields are marked with an asterisk(*)</i>
+   				</small>
+   			</td>
+   		</tr>
+
+   		<tr>
+   			<td>
+   				Account Number<span style="color: red">*</span>
+   			</td>
+   			<td>
+   				<input type="text" pattern="[0-9]{9,18}" title="9 to 18 digits required" required>
+   			</td>
+   			<td>
+   				<small>(Account Number is avalible in your passbook and/or statement of account)</small>
+   			</td>
+   		</tr>
+
+   		<tr>
+   			<td>
+   				CIF Number<span style="color: red">*</span>
+   			</td>
+
+   			<td>
+   				<input type="text"  pattern="[0-9]{9,11}" title="9 to 11 digits required" required>
+   			</td>
+
+   			<td>
+   				<small>(CIF Number is avalible in your passbook and/or statement of account)</small>
+   			</td>
+   		</tr>
+
+   		<tr>   
+   			<td>
+   				Branch ode<span style="color:red;">*</span>
+   			</td>
+   				<td>
+   					<input type="text" pattern="[A-Z]{4}0[AZ0-9]{6}" title="4 capital alphabets,0,6 capital alphabets or digit required"requird>
+   				</td>
+   			<td>
+   				<button style="border:none; background-color: #F89611;color:white; padding: 10px; border-radius: 5px;font-size: 15px;">
+   					Get branch name
+   				</button>
+
+   				<small>(please enter 5 digit brance code</small>
+   			</td>
+   		</tr>
+
+   		<tr>
+   			<td>
+   				country
+   			</td>
+   			<td>
+   			<select>
+   				<option hidden>---select counrty---</option>
+   				<option>india</option>
+   				<option>USA</option>
+   				<option>pakistan</option>
+   				<option>bangladesh</option>
+   			</select>
+   		</td>
+   			<td>
+   				<small>for canada, choose USA</small>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td>
+   				ragistered mobile number<span style="color: red;">*</span>
+   			</td>
+   	
+   			<td>
+   				<select>
+   					<option hidden></option>
+   					<option>+91</option>
+   					<option>+1</option>
+   					<option>+92</option>
+   					<option>+880</option>
+   				</select>
+   				<input type="text" pattern="[0-9]{10}" required title="10 digit required">
+   			</td>
+   			<td>
+   				<small>please enter mobile registered with bank</small>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td>
+   				facility required<span style="color=red">*</span>
+   			</td>
+   	
+
+   			<td>
+   				<select>
+   					<option hidden="">---select transectio rights---</option>
+   				</select>
+   			</td>
+   		</tr>
+   		<tr>
+   			<td>
+   				Enter the text as show in the image<span style="color:red;">*</span>
+   			</td>
+   			<td>
+   				<input type="text" pattern="D77D7"required>
+   				<span style="border:1px solid black;background-color: #D9FFF6;">C7DD7</span>
+   			</td>
+   		</tr>
+   		<tr>
+   			<th colspan="3">
+   				<input type="submit" style="color:white; background-color: #F89611; padding:5px; border:none; border-radius:5px;">
+   			</th>
+   		</tr>
+   	</table>
+   </form>
+</body>
+</html>
